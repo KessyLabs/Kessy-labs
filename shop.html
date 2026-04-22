@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kessy Labs | Shop</title>
+    <link rel="icon" type="image/png" href="./assets/kessy-labs-logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body data-page="shop">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="./index.html">
+          <img src="./assets/kessy-labs-logo.png" alt="Kessy Labs logo" class="brand-logo" />
+          <span>Kessy Labs</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="siteNav">
+          <a href="./index.html">Home</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./digital.html">Digital</a>
+          <a href="./content.html">Content</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <div>
+            <p class="eyebrow">Affiliate Store</p>
+            <h1>An elite tech storefront built for affiliate products and easy scaling.</h1>
+            <p class="hero-text">
+              Browse Kessy Labs products by category, surface trending deals, and
+              swap product links from one data file whenever new offers go live.
+            </p>
+          </div>
+          <div class="feature-visual visual-shop">
+            <span>Store Stack</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <img src="./assets/kessy-labs-logo.png" alt="" class="section-heading-logo" />
+            <p class="eyebrow">Shop Directory</p>
+            <h2>Filter products by category or browse all offers</h2>
+            <p>
+              This catalog is structured to stay manageable even when you expand
+              toward 100 or more products.
+            </p>
+          </div>
+
+          <div class="store-toolbar">
+            <div class="filter-group" id="shopFilters"></div>
+            <label class="search-shell" for="shopSearch">
+              <span>Search products</span>
+              <input
+                type="search"
+                id="shopSearch"
+                placeholder="Search gadgets, phones, accessories, laptops..."
+              />
+            </label>
+          </div>
+
+          <div class="store-meta">
+            <div class="content-card meta-card">
+              <p class="card-label">Featured Categories</p>
+              <h3>Built-in store sections</h3>
+              <p>Budget Tech Picks, Trending Gadgets, Best Value Deals, Phones, Accessories, and Laptops.</p>
+            </div>
+            <div class="content-card meta-card">
+              <p class="card-label">Affiliate Ready</p>
+              <h3>Replace links in one place</h3>
+              <p>Every product uses a direct `affiliateUrl` field in the shared product data file.</p>
+            </div>
+            <div class="content-card meta-card">
+              <p class="card-label">Scalable</p>
+              <h3>Simple to expand later</h3>
+              <p>Add, remove, or update products without rebuilding the card layout.</p>
+            </div>
+          </div>
+
+          <div class="card-grid products-grid" id="shopCatalog"></div>
+          <p class="empty-state hidden" id="shopEmptyState">
+            No products matched that filter. Try another category or search term.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>Kessy Labs</p>
+        <p id="footerYear"></p>
+      </div>
+    </footer>
+
+    <script src="./product-data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Kessy Labs showcases affordable gadgets, digital tools, and creator content with a modern affiliate-first storefront."
+    />
+    <title>Kessy Labs | Affiliate + Product Showcase</title>
+    <link rel="icon" type="image/png" href="./assets/kessy-labs-logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="./index.html">
+          <img src="./assets/kessy-labs-logo.png" alt="Kessy Labs logo" class="brand-logo" />
+          <span>Kessy Labs</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="siteNav">
+          <a href="./index.html">Home</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./digital.html">Digital</a>
+          <a href="./content.html">Content</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Affiliate + Product Showcase</p>
+            <h1>Affordable tech, trusted tools, and content-ready picks for Nigerian buyers.</h1>
+            <p class="hero-text">
+              Kessy Labs is structured like a modern tech startup storefront,
+              with reusable product cards, editable affiliate links, and sections
+              you can grow as your catalog expands.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="./shop.html">Browse products</a>
+              <a class="button button-secondary" href="./digital.html">Explore digital tools</a>
+            </div>
+            <div class="hero-stats">
+              <article>
+                <strong>Budget First</strong>
+                <span>Affordable picks for local buyers</span>
+              </article>
+              <article>
+                <strong>Easy to Update</strong>
+                <span>Edit one data file for links and products</span>
+              </article>
+              <article>
+                <strong>Mobile Ready</strong>
+                <span>Clean responsive storefront experience</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="hero-panel">
+            <div class="hero-card glow-card">
+              <img
+                src="./assets/kessy-labs-logo.png"
+                alt="Kessy Labs logo"
+                class="hero-logo"
+              />
+              <p class="card-label">Featured Categories</p>
+              <h2>Shop tech that actually feels useful.</h2>
+              <p>
+                Showcase gadgets, accessories, affordable laptops, AI tools,
+                downloads, and creator content from one polished Kessy Labs hub.
+              </p>
+              <ul class="hero-list">
+                <li>Budget Tech Picks under selected naira ranges</li>
+                <li>Best Value Deals for smart buyers</li>
+                <li>Trending products and creator-friendly tools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <img src="./assets/kessy-labs-logo.png" alt="" class="section-heading-logo" />
+            <p class="eyebrow">Featured Deals</p>
+            <h2>Homepage spotlight carousel for high-click products</h2>
+            <p>
+              Use this scrolling deals row to keep attention on your strongest
+              affiliate picks, special offers, and fast-moving product categories.
+            </p>
+          </div>
+          <div class="carousel-shell">
+            <button class="carousel-button" id="featuredPrev" type="button" aria-label="Previous deals">
+              Prev
+            </button>
+            <div class="carousel-track" id="featuredProducts"></div>
+            <button class="carousel-button" id="featuredNext" type="button" aria-label="Next deals">
+              Next
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <img src="./assets/kessy-labs-logo.png" alt="" class="section-heading-logo" />
+            <p class="eyebrow">Spotlight Categories</p>
+            <h2>Jump directly into the store sections that matter most</h2>
+            <p>
+              These tiles now deep-link into filtered shop views so visitors can
+              land straight inside the right part of your catalog.
+            </p>
+          </div>
+          <div class="card-grid categories-grid" id="categoriesGrid"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <img src="./assets/kessy-labs-logo.png" alt="" class="section-heading-logo" />
+            <p class="eyebrow">Budget Tech Picks</p>
+            <h2>Affordable electronics in the NGN 20,000 to NGN 50,000 range</h2>
+            <p>
+              Curated for Nigerian affiliate audiences who want practical gadgets
+              without overspending.
+            </p>
+          </div>
+          <div class="card-grid products-grid" id="budgetProducts"></div>
+        </div>
+      </section>
+
+      <section class="section section-alt">
+        <div class="container">
+          <div class="section-heading">
+            <img src="./assets/kessy-labs-logo.png" alt="" class="section-heading-logo" />
+            <p class="eyebrow">Best Value Deals</p>
+            <h2>Products that balance price and performance</h2>
+            <p>
+              These are the items that feel easiest to recommend when buyers want
+              strong everyday value.
+            </p>
+          </div>
+          <div class="card-grid products-grid" id="valueProducts"></div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <img src="./assets/kessy-labs-logo.png" alt="" class="section-heading-logo" />
+            <p class="eyebrow">Trending Products</p>
+            <h2>What people are already curious about</h2>
+            <p>
+              Use this section to surface products that attract clicks, short-form
+              content, and impulse purchases.
+            </p>
+          </div>
+          <div class="card-grid products-grid" id="trendingProducts"></div>
+        </div>
+      </section>
+
+      <section class="section section-contact">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">Call to Action</p>
+            <h2>Ready to turn attention into clicks and conversions?</h2>
+            <p>
+              Use the Shop page for products, Digital for tools and downloads,
+              Content for media-led discovery, and Contact for enquiries and
+              partnerships.
+            </p>
+            <div class="stack-actions">
+              <a class="button button-primary" href="./shop.html">Open full shop</a>
+              <a class="button button-secondary" href="./contact.html">Contact Kessy Labs</a>
+            </div>
+          </div>
+
+          <div class="content-card checklist-card">
+            <p class="card-label">Why this setup works</p>
+            <h3>Made for easy editing</h3>
+            <ul class="hero-list">
+              <li>Add or remove products from one shared data file</li>
+              <li>Swap dummy affiliate links whenever real offers are ready</li>
+              <li>Expand categories without rewriting the UI</li>
+              <li>Reuse the same card styling across pages</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>Kessy Labs</p>
+        <p id="footerYear"></p>
+      </div>
+    </footer>
+
+    <script src="./product-data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kessy Labs | Contact</title>
+    <link rel="icon" type="image/png" href="./assets/kessy-labs-logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <div class="container nav-shell">
+        <a class="brand" href="./index.html">
+          <img src="./assets/kessy-labs-logo.png" alt="Kessy Labs logo" class="brand-logo" />
+          <span>Kessy Labs</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+          <span></span><span></span><span></span>
+        </button>
+        <nav class="site-nav" id="siteNav">
+          <a href="./index.html">Home</a>
+          <a href="./shop.html">Shop</a>
+          <a href="./digital.html">Digital</a>
+          <a href="./content.html">Content</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <section class="page-hero">
+        <div class="container page-hero-grid">
+          <div>
+            <p class="eyebrow">Contact Kessy Labs</p>
+            <h1>Talk to us about gadgets, digital tools, partnerships, or content work.</h1>
+            <p class="hero-text">
+              Use WhatsApp for quick enquiries or prepare a message that opens in
+              your email app.
+            </p>
+          </div>
+          <div class="feature-visual visual-contact">
+            <span>Let's Talk</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <img src="./assets/kessy-labs-logo.png" alt="" class="section-heading-logo" />
+            <p class="eyebrow">Reach Out</p>
+            <h2>Fast replies, clear guidance, and a clean buying experience.</h2>
+            <p>
+              For direct support, product orders, or collaborations, message Kessy
+              Labs on WhatsApp or send a detailed enquiry by email.
+            </p>
+            <div class="stack-actions">
+              <a
+                class="button button-whatsapp"
+                href="https://wa.me/2348000000000?text=Hello%20Kessy%20Labs%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+                target="_blank"
+                rel="noreferrer"
+              >
+                Chat on WhatsApp
+              </a>
+              <a class="button button-secondary" href="mailto:hello@kessylabs.com">Send Email</a>
+            </div>
+          </div>
+
+          <form class="contact-form content-card" id="contactForm" data-email="hello@kessylabs.com">
+            <label>
+              <span>Name</span>
+              <input type="text" id="name" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" id="email" name="email" placeholder="Your email" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea id="message" name="message" rows="6" placeholder="How can Kessy Labs help you?" required></textarea>
+            </label>
+            <div class="contact-actions">
+              <button type="submit" class="button button-primary">Send via WhatsApp</button>
+              <button type="button" class="button button-secondary" id="emailButton">Send via Email</button>
+            </div>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <p>Kessy Labs</p>
+        <p id="footerYear"></p>
+      </div>
+    </footer>
+
+    <script src="./product-data.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
