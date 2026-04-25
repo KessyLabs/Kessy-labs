@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kessy Labs Dashboard</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #0b0f1a;
+      color: white;
+      margin: 0;
+    }
+
+    header {
+      background: #111827;
+      padding: 15px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .card {
+      background: #1f2937;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background: #2563eb;
+      border: none;
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>Kessy Labs</h2>
+  <button onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+  <h3>Welcome 👋</h3>
+
+  <div class="card">
+    <h4>🔥 Hot Deals</h4>
+    <p>Best affiliate products for you</p>
+  </div>
+
+  <div class="card">
+    <h4>📊 Your Activity</h4>
+    <p>Coming soon...</p>
+  </div>
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+
+<script>
+  const firebaseConfig = {
+    // PUT YOUR REAL CONFIG HERE
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const auth = firebase.auth();
+
+  auth.onAuthStateChanged(user => {
+    if (!user) {
+      window.location.href = "login.html";
+    }
+  });
+
+  function logout(){
+    auth.signOut().then(() => {
+      window.location.href = "login.html";
+    });
+  }
+</script>
+
+</body>
+</html>
