@@ -271,3 +271,6 @@ if (page === "digital") {
 if (page === "content") {
   renderInto("#contentGrid", kessyData.contentCards, formatContentCard);
 }
+function buy(link){
+  window.open(link, "_blank");
+}
